@@ -1,4 +1,5 @@
 //app.js
+var Promise = require('lib/es6-promise.min')
 App({
   onLaunch: function () {
     //调用API从本地缓存中获取数据
@@ -26,5 +27,24 @@ App({
   },
   globalData:{
     userInfo:null
+  },
+  httpGet:function(url){
+    var p= new Promise(function (resolve, reject) {
+      fetch(url)
+          .then(function(response){
+            if(response.status==200){
+              resolve(response.json() );
+            }else{
+              //TODO:
+              console.log("内部错误！");
+              reject("内部错误！");
+            }
+          })
+          .catch(function(err){
+              console.log("Fetch错误:"+err);
+              reject(err);
+          });
+    });
+    return p ;
   }
 })

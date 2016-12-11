@@ -1,0 +1,22 @@
+<view class="btn-area">
+  <navigator url="lawyer-list?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+  <navigator url="lawyer-list?title=redirect" redirect hover-class="other-navigator-hover">在当前页打开</navigator>
+</view>
+<view class="section">
+    <view class="section__title">flex-direction: column</view>
+    <view class="list" style="height: 300px;flex-direction:column;" >
+        <view class="weui-cell" id="{{lawyer.id}}" wx:for="{{lawyer_list}}" wx:for-index="idx" wx:for-item="lawyer" >
+            <view class="weiui-cell__hd">
+                <image class="img" src="{{lawyer.avatar}}"></image>
+            </view>
+            <view class="weiui-cell__bd">
+                {{lawyer.name}}
+            </view>
+            <view class="weiui-cell__fd">
+                {{lawyer.introduction}}
+            </view>
+        </view>
+    </view>
+
+
+</view>

@@ -1,12 +1,36 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/lawyer/lawyer-list"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#04be02",
+    "navigationBarTitleText": "微建盾欢迎您",
+    "navigationBarTextStyle":"wihte"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"static/common/home.png",
+      "selectedIconPath":"static/common/home-active.png"
+    }, {
+      "pagePath": "pages/lawyer/lawyer-list",
+      "text": "电话",
+      "iconPath":"static/common/phone.png",
+      "selectedIconPath":"static/common/phone-active.png"
+    }, {
+      "pagePath": "pages/logs/index",
+      "text": "反馈",
+      "iconPath":"static/common/feedback.png",
+      "selectedIconPath":"static/common/feedback-active.png"
+    }, {
+      "pagePath": "pages/logs/index",
+      "text": "聊天",
+      "iconPath":"static/common/chat.png",
+      "selectedIconPath":"static/common/chat.png"
+    }]
   }
 }

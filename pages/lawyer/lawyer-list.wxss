@@ -1,0 +1,33 @@
+@import '../../style/weui.wxss';
+.ahref {
+  display: block;
+  position: relative;
+  padding: 0.06rem 0.1rem 0.06rem 0.71rem;
+  height: 0.72rem;
+  box-sizing: border-box;
+  margin-top: 0.07rem;
+  background: white;
+  border-bottom: solid 0.01rem #C7C8C9;
+}
+
+.ahref .img {
+  position: absolute;
+  left: 0.09rem;
+  top: 0.06rem;
+  width: 0.48rem;
+  height: 0.59rem;
+}
+.ahref .name {
+  font-size: 0.15rem;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.ahref .description {
+  margin-top: 0.07rem;
+  color: #9B9B9B;
+  font-size: 0.12rem;
+  line-height: 0.15rem;
+  height: 0.3rem;
+  overflow: hidden;
+}
