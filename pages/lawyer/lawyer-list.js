@@ -12,6 +12,7 @@ Page({
     },
     onShow: function() {
         var _this = this ;
+
         this.getData(_this);
         console.log('y');
     },
